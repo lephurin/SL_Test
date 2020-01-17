@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Senna Labs Front-End Test - 1</title>
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    
+</head>
+<body>
+    
+    <div id="app">
+        <p>{{ favCar() }}</p>
+    </div>
+
+<script>
+new Vue({
+	el: "#app",
+	data: {
+		hisVehicle:[
+			{name:"rick", car:["Corvette Z06", "Lotus Exite S"]},
+			{name:"john", car:["BMW 320D"]},
+			{name:"zing", car:["Honda Jazz","Honda Click","Honda Waves"]}
+		]
+	},
+	methods:{
+		favCar: function(){
+			var i,j,x;
+			for(i=0; i<this.hisVehicle.length; i++){
+				x+= this.hisVehicle[i].name[0].toUpperCase() + this.hisVehicle[i].name.slice(1) 
+					+ " want to buy " + this.hisVehicle[i].car + "<br>";
+                //I can't add HTML TAGS,I tried to find way to add HTML TAG from function in Vue.
+                //The second way use favCar function without for loop,then use v-html to bind HTML TAGS from data in Vue			
+            }
+			return x;
+		}
+	}
+});
+</script>
+</body>
+
+</html>

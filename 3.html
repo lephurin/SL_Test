@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Senna Labs Front-End Test - 3</title>
+</head>
+<body>
+<p id="uniq_n1"></p>
+<p id="uniq_n2"></p>
+<script>
+    var n1 = [1,1,1,2,1,1];
+    var n2 = [0,0,0.55,0,0];
+    var x;
+    
+    //I can't find how to coding easier :(
+    function findUniq(a,b,c,d,e,f){
+        
+        if(a == b && a == c && a == d && a == e && a == f)
+            return x= "All is equal";
+        else if(a != b && a == c && a == d && a == e && a == f)
+            return x= b;
+        else if(a == b && a != c && a == d && a == e && a == f)
+            return x= c;
+        else if(a == b && a == c && a != d && a == e && a == f)
+            return x= d;
+        else if(a == b && a == c && a == d && a != e && a == f)
+            return x= e;
+        else if(a == b && a == c && a == d && a == e && a != f)
+            return x= f;
+        else if(a != b && a != c && a != d && a != e && a != f)
+            return x= a;
+        else if(a == b && a == c && a == d && a == e)
+            return x= "All is equal";
+        else if(a != b && a == c && a == d && a == e)
+            return x= b;
+        else if(a == b && a != c && a == d && a == e)
+            return x= c;
+        else if(a == b && a == c && a != d && a == e)
+            return x= d;
+        else if(a == b && a == c && a == d && a != e)
+            return x= e;
+        else if(a != b && a != c && a != d && a != e)
+            return x= a;
+    }
+    
+    findUniq(n1[0],n1[1],n1[2],n1[3],n1[4],n1[5]);
+    document.getElementById("uniq_n1").innerHTML = x+"<br>";
+    findUniq(n2[0],n2[1],n2[2],n2[3],n2[4],n2[5]);
+    document.getElementById("uniq_n2").innerHTML = x;
+    
+</script>
+</body>
+<script>
+</script>
+</html>

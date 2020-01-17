@@ -1,0 +1,9 @@
+>>intstruction<<
+This is Sennalabs Front-end Junior - Mid Test
+
+--for question1 : 1.html , 1_Vue.html
+--for question3 : 3.html
+--for question4 : 4_1.html , 4_2.html , Folder img and css(stylesheet in there)
+--for question6 : 6.html
+
+Thanks for your attention krub.
