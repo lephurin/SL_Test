@@ -25,7 +25,7 @@ new Vue({
 	},
 	methods:{
 		favCar: function(){
-			var i,j,x;
+			var i,j,x="";
 			for(i=0; i<this.hisVehicle.length; i++){
 				x+= this.hisVehicle[i].name[0].toUpperCase() + this.hisVehicle[i].name.slice(1) 
 					+ " want to buy " + this.hisVehicle[i].car + "<br>";
